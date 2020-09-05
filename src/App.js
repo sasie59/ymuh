@@ -1,13 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import HeaderBlock from './components/HeaderBlock';
+import InfoBlock from './components/InfoBlock';
+import BannerBlock from './components/BannerBlock';
+import RealTime from './components/RealTimeBlock'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>YMUH</h1>
-      </header>
+      <HeaderBlock />
+      <InfoBlock />
+      <BannerBlock />
+      <RealTime />
+
     </div>
   );
 }
