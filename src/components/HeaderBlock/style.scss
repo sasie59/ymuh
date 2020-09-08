@@ -1,0 +1,12 @@
+.HeaderBlock {
+  display: flex;
+  align-items: center;
+  position: relative;
+  .logo {
+    display: flex;
+  }
+  .searchBar {
+    position: absolute;
+    right: 0;
+  }
+}

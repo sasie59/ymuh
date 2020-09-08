@@ -1,0 +1,11 @@
+.InfoBlock {
+  display: flex;
+  position: relative;
+  .infoBar{
+    display: flex;
+  }
+  .bus {
+    right: 0;
+    position: absolute;
+  }
+}
