@@ -1,8 +1,9 @@
 .BannerBlock {
   display: flex;
+  margin: 15px 15px;
   position: relative;
   .carousel {
-    width: 400px;
+    width: 800px;
     height: 360px;
     background-color: #eee;
   }
@@ -10,11 +11,10 @@
     right: 0;
     display: flex;
     position: absolute;
-    .left, .right  {
-      .grid {
-        width: 200px;
-        height: 180px;
+    .grid {
+      .bottom {
+        background-color: #ccc;
       }
-    };
+    }
   }
 }

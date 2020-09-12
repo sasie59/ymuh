@@ -10,14 +10,20 @@ export default class BannerBlock extends Component {
           
         </div>
         <div className='fourSquareGrid'>
-          <Gird>掛號</Gird>
-          <Gird style={{
-            backgroundColor: '#ccc'
-          }}>門診表</Gird>
-          <Gird style={{
-            backgroundColor: '#ccc'
-          }}>找醫師</Gird>
-          <Gird>聯絡</Gird>
+          <div className='grid'>
+            <Gird>掛號</Gird>
+            <span className='bottom'>
+              <Gird>門診表</Gird>
+            </span>
+          </div>
+          <div className='grid'>
+            <span style={{
+              backgroundColor: '#ccc'
+            }}>
+              <Gird>找醫師</Gird>
+            </span>
+            <Gird>聯絡</Gird>
+          </div>
         </div>
       </div>
     )
