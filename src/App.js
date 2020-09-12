@@ -5,7 +5,7 @@ import Banner from './components/BannerBlock';
 import RealTime from './components/RealTimeBlock';
 import News from './components/NewsBlock';
 import Footer from './components/FooterBlock';
-
+import './App.scss';
 function App() {
   return (
     <div className="App">

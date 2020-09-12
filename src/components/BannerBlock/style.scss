@@ -1,0 +1,20 @@
+.BannerBlock {
+  display: flex;
+  position: relative;
+  .carousel {
+    width: 400px;
+    height: 360px;
+    background-color: #eee;
+  }
+  .fourSquareGrid {
+    right: 0;
+    display: flex;
+    position: absolute;
+    .left, .right  {
+      .grid {
+        width: 200px;
+        height: 180px;
+      }
+    };
+  }
+}
