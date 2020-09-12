@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Gird from './components/GridBlock';
+import DarkGrid from './components/DarkGridBlock';
+
 import './style.scss';
 
 export default class BannerBlock extends Component {
@@ -12,16 +14,10 @@ export default class BannerBlock extends Component {
         <div className='fourSquareGrid'>
           <div className='grid'>
             <Gird>掛號</Gird>
-            <span className='bottom'>
-              <Gird>門診表</Gird>
-            </span>
+            <DarkGrid>門診表</DarkGrid>
           </div>
           <div className='grid'>
-            <span style={{
-              backgroundColor: '#ccc'
-            }}>
-              <Gird>找醫師</Gird>
-            </span>
+            <DarkGrid>找醫師</DarkGrid>
             <Gird>聯絡</Gird>
           </div>
         </div>
