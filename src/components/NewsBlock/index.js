@@ -7,7 +7,9 @@ export default class NewsBlock extends Component {
     return (
       <div className='NewsBlock'>
         <div className="News">
+          <div className='firstColumn'>
           <News>首頁公告</News>
+          </div>
           <News>新聞發怖</News>
           <News>門診公告</News>
           <News>鄉親肯定</News>

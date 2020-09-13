@@ -3,7 +3,7 @@ import './style.scss';
 
 export default function News(props) {
   return (
-    <div className='box'>
+    <div className='NewsArea'>
       {props.children}
     </div>
   )

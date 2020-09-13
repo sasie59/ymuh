@@ -1,7 +1,16 @@
 .FooterBlock {
+  color: #666;
   display: flex;
   margin: 15px 15px;
-  .infoBar{
-    display: flex;
+  position: relative;
+  background-color: #c4c4c4;
+    .infoBar{
+      display: flex;
+    }
+    .setEnd {
+      left: 50%;
+      bottom: 10%;
+      position: absolute;
+      transform: translateX(-50%);
+    }
   }
-}

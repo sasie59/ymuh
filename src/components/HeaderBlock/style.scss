@@ -1,10 +1,11 @@
 .HeaderBlock {
   display: flex;
   margin: 15px 15px;
-  align-items: center;
   position: relative;
+  align-items: center;
   .logo {
     display: flex;
+    color: #999;
   }
   .searchBar {
     position: absolute;

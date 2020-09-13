@@ -1,6 +1,7 @@
 .InfoBlock {
   display: flex;
-  margin: 15px 15px;
+  margin: 40px 20px;
+  color: #666;
   position: relative;
   .infoBar{
     display: flex;
@@ -8,5 +9,8 @@
   .bus {
     right: 0;
     position: absolute;
+    .driveTime {
+      font-weight: bold;
+    }
   }
 }

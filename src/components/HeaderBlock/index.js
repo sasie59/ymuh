@@ -6,8 +6,8 @@ export default class HeaderBlock extends Component {
   render() {
     return (
       <div className='HeaderBlock'>
+        <img src={img} alt=""/>
         <div className='logo'>
-          <img src={img} alt=""/>
           <h2>國立陽明大學附設醫院</h2>
         </div>
         <div className='searchBar'>

@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import InfoBar from './InfoBar/index';
 import './style.scss';
 
+const lanyang = '08 : 30';
+const xinmin = '08 : 45';
+
 export default class InfoBlock extends Component {
   render() {
     return (
@@ -16,8 +19,22 @@ export default class InfoBlock extends Component {
           <InfoBar>聯絡我們</InfoBar>
         </div>
         <div className="bus">
-          <a href="">蘭陽院區發車 08:30</a><br/>
-          <a href="">新民院區發車 08:45</a>
+          <a href="">蘭陽院區發車</a>
+          <span
+            className='driveTime'
+            style={{
+              color: '#D2795D'
+            }}>
+            {xinmin}
+          </span><br/>
+          <a href="">新民院區發車</a>
+          <span
+            className='driveTime'
+            style={{
+              color: '#333'
+            }}>
+            {lanyang}
+          </span>
         </div>
       </div>
     )

@@ -8,14 +8,17 @@ export default class FooterBlock extends Component {
     return (
       <div className='FooterBlock'>
         <img src={img} alt=""/>
-        <div className="infoBar">
-          <InfoBar>醫院介紹</InfoBar>
-          <InfoBar>醫療單位</InfoBar>
-          <InfoBar>最新資訊</InfoBar>
-          <InfoBar>醫療項目</InfoBar>
-          <InfoBar>預約看診</InfoBar>
-          <InfoBar>表格下載</InfoBar>
-          <InfoBar>聯絡我們</InfoBar>
+        <div>
+          <div className="infoBar">
+            <InfoBar>醫院介紹</InfoBar>
+            <InfoBar>醫療單位</InfoBar>
+            <InfoBar>最新資訊</InfoBar>
+            <InfoBar>醫療項目</InfoBar>
+            <InfoBar>預約看診</InfoBar>
+            <InfoBar>表格下載</InfoBar>
+            <InfoBar>聯絡我們</InfoBar>
+          </div>
+          <div className='setEnd'>© 2020 國立陽明大學附設醫院. All Rights Reserved</div>
         </div>
       </div>
     )

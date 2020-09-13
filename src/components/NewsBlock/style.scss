@@ -1,5 +1,9 @@
 .NewsBlock {
   margin: 15px 15px;
   .News {
+    .firstColumn {
+      display: inline-block;
+      background-color: #eee;
+    }
   }
 }
