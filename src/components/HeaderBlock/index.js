@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import img from './logo.png';
+import magnifier from './magnifier.jpg';
 import './style.scss';
 
 export default class HeaderBlock extends Component {
@@ -11,7 +12,8 @@ export default class HeaderBlock extends Component {
           <h2>國立陽明大學附設醫院</h2>
         </div>
         <div className='searchBar'>
-          <input type="text"/>
+          <input className='search' type="text"/>
+          <img src={magnifier} className='magnifier'/>
         </div>
       </div>
     )

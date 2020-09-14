@@ -8,7 +8,18 @@
     color: #999;
   }
   .searchBar {
-    position: absolute;
     right: 0;
+    position: absolute;
+    .search {
+      width: 200px;
+      height: 33px;
+    }
+    .magnifier {
+      width: 30px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(-10%, -50%);
+    }
   }
 }
