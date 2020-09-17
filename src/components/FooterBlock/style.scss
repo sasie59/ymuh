@@ -1,9 +1,14 @@
 .FooterBlock {
   color: #666;
   display: flex;
+  padding: 40px 0;
   position: relative;
   background-color: #c4c4c4;
-    .infoBar{
+  .container {
+    img {
+      width: 100px;
+    }
+    .infoBar {
       display: flex;
     }
     .setEnd {
@@ -13,3 +18,4 @@
       transform: translateX(-50%);
     }
   }
+}
