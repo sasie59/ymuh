@@ -1,5 +1,7 @@
 .App {
-  width: 900px;
-  height: 1288px;
-  margin: 0 auto;
+  .container {
+    width: 800px;
+    margin: 0 auto;
+    // border: 1px solid #eee;
+  }
 }

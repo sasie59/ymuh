@@ -1,14 +1,33 @@
+$link-color: #666;
+
 .InfoBlock {
+  color: $link-color;
   display: flex;
-  margin: 40px 20px;
-  color: #666;
   position: relative;
-  .infoBar{
-    display: flex;
+  align-items: center;
+  .infoBar {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-left: 10px;
+    .box {
+      display: inline;
+      font-size: 18px;
+      margin-right: 15px;
+    }
+  }
+  .gap {
+    flex: 1;
   }
   .bus {
-    right: 0;
-    position: absolute;
+    // right: 0;
+    // position: absolute;
+    a {
+      color: $link-color;
+      &:hover {
+        text-decoration: none;
+      }
+    }
     .driveTime {
       font-weight: bold;
     }

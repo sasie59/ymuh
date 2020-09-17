@@ -1,6 +1,5 @@
 import React from 'react';
-import { createStore } from "redux";
-import { change, addNumber } from './actions';
+// import { createStore } from "redux";
 
 import Header from './components/HeaderBlock';
 import Info from './components/InfoBlock';
@@ -9,25 +8,23 @@ import RealTime from './components/RealTimeBlock';
 import News from './components/NewsBlock';
 import Footer from './components/FooterBlock';
 import './App.scss';
-import reducers from './reducers/internalMedList';
+// import reducers from './reducers';
 
-const store = createStore(reducers,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  )
+// const store = createStore(reducers,
+//   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+//   )
 
-store.subscribe(() => console.warn(store.getState()));
-store.dispatch(change());
-store.dispatch(addNumber());
-// add測試起來有問題 number沒有+1 變成多一個屬性?
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Info />
-      <Banner />
-      <RealTime />
-      <News />
+      <div className="container">
+        <Header />
+        <Info />
+        <Banner />
+        <RealTime />
+        <News />
+      </div>
       <Footer />
     </div>
   );
