@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import img from 'images/logo.jpg';
+import img from '../../images/logo.jpg';
 import './style.scss';
 
 export default class HeaderBlock extends Component {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import img from 'images/logo.jpg';
+import img from '../../images/logo.jpg';
 // import InfoBar from '../InfoBlock/InfoBar/index';
 import './style.scss';
 
