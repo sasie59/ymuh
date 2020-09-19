@@ -1,7 +1,8 @@
-export const REAL_TIME_INFO = 'REAL_TIME_INFO';
+export const CHANGE_DEPARTMENT = 'CHANGE_DEPARTMENT';
 
-export const realTimeInfo = () => {
-  return{
-    type: REAL_TIME_INFO
-  };
-};
+
+export const changeDepartment = () => {
+  return {
+    type: CHANGE_DEPARTMENT
+  }
+}

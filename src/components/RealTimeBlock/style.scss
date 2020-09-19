@@ -3,5 +3,37 @@
   .title {
     display: flex;
     text-align: center;
+    .internalMed {
+      margin: 13px;
+      background-color: #D8EBCA;
+      .space {
+        height: 10px;
+        background-color: #fff;
+      }
+    }
+    .surgical {
+      margin: 13px;
+      background-color: #CAEBDB;
+      .space {
+        height: 10px;
+        background-color: #fff;
+      }
+    }
+    .gynAndPediatrics {
+      margin: 13px;
+      background-color: #CADBEB;
+      .space {
+        height: 10px;
+        background-color: #fff;
+      }
+    }
+    .other {
+      margin: 13px;
+      background-color: #D3CAEB;
+      .space {
+        height: 10px;
+        background-color: #fff;
+      }
+    }
   }
 }

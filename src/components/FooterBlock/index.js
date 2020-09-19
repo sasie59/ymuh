@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './style.scss';
-import img from '../../images/logo.jpg';
+import img from 'images/logo.jpg';
 
 const arr = [
   '醫院介紹',
