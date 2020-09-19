@@ -1,2 +1,28 @@
 .SubjectBlock {
+  width: 200px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #eee;
+  .division {
+    font-size: 24px;
+    color: #666;
+    font-weight: 700;
+  }
+  .name {
+    color: #999;
+    font-weight: 400;
+  }
+  .number {
+    font-size: 72px;
+    font-weight: 700;
+    color: #81C84A;
+  }
+  .text {
+    color:#999;
+    text-decoration: underline;
+  }
 }

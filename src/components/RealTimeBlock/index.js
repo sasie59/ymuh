@@ -16,6 +16,10 @@ export default class RealTimeBlock extends Component {
             }}
           >
             <Title>謢理指導</Title>
+            <div style={{
+              height: '10px',
+              backgroundColor: '#fff'
+            }} />
             <Subject />
           </div>
           <div
