@@ -1,6 +1,5 @@
 import {
-    CHANGE,
-    ADD_NUMBER,
+    REAL_TIME_INFO,
     } from '../actions/index'
 
 const initial = {
@@ -16,15 +15,17 @@ const initial = {
   ]
 };
 
-
 export default function internalMed( state = initial, action) {
   switch(action.type) {
-    case CHANGE:
-      state.index++
-      return state;
-    case ADD_NUMBER:
-      state.list.numer++
-      return state
+    case REAL_TIME_INFO:
+      const newList = state.list.map(item => {
+        item.number++;
+        return item;
+      });
+      return {
+        index: (state.index + 1) % state.list.length,
+        list: newList,
+      }
     default:
       return state;
   }

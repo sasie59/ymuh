@@ -1,14 +1,7 @@
-export const CHANGE = 'CHANGE';
-export const ADD_NUMBER = 'ADD_NUMBER';
+export const REAL_TIME_INFO = 'REAL_TIME_INFO';
 
-export const change = () => {
+export const realTimeInfo = () => {
   return{
-    type: CHANGE
-  };
-};
-
-export const addNumber = () => {
-  return{
-    type: ADD_NUMBER
+    type: REAL_TIME_INFO
   };
 };
