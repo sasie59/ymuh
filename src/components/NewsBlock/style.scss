@@ -1,9 +1,17 @@
 .NewsBlock {
-  margin: 15px 15px;
+  display: flex;
   .News {
-    .firstColumn {
-      display: inline-block;
-      background-color: #eee;
+    list-style: none;
+    text-align: center;
+    .li {
+      width: 189px;
+      height: 48px;
     }
+  }
+  .article {
+    width: 550px;
+    height: 300px;
+    margin-top: 20px;
+    background-color: #eee;
   }
 }
