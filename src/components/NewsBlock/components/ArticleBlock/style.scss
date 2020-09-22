@@ -3,6 +3,8 @@
     font-size: 16px;
     padding: 14px 0;
     text-decoration: underline;
-    border-bottom: 1px dashed #aaa;
+    &:not(:last-of-type) {
+      border-bottom: 1px dashed #aaa;
+    }
   }
 }
