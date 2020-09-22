@@ -7,20 +7,19 @@ import "./style.scss";
 export class NewsBlock extends Component {
   
   render() {
-    console.warn(this.props.state);
-    // 沒抓到state?
+    const textList = this.props.category[this.props.select];
     return (
       <div className="NewsBlock">
         <ul className="News">
-          <li className='li'>首頁公告</li>
-          <li className='li'>新聞發怖</li>
-          <li className='li'>門診公告</li>
-          <li className='li'>鄉親肯定</li>
-          <li className='li'>員工服務</li>
-          <li className='li'>防疫物資</li>
+          <li>首頁公告</li>
+          <li>新聞發怖</li>
+          <li>門診公告</li>
+          <li>鄉親肯定</li>
+          <li>員工服務</li>
+          <li>防疫物資</li>
         </ul>
         <div className='article'>
-          <Article/> 
+          <Article textList={textList} /> 
         </div>
       </div>
     );
@@ -28,7 +27,7 @@ export class NewsBlock extends Component {
 }
 
 const mapState2Props = (state) => {
-  return state;
+  return state.newsList;
 };
 
 const mapDispatch2Props = (dispatch) => {

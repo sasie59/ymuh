@@ -10,14 +10,25 @@ import RealTime from "./components/RealTimeBlock";
 import News from "./components/NewsBlock";
 import Footer from "./components/FooterBlock";
 
-// import reducers from "./reducers/internalMedList";
-import reducer from "./reducers/fourList";
-// import { changeDepartment } from "./actions";
+import reducers from "./reducers";
+import reducer2 from "./reducers/newsList";
+import { changeArticle } from "./actions";
 
 const store = createStore(
-  reducer,
+  reducers,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
+
+// const store2 = createStore(
+//   reducer2,
+//   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+// );
+// store2.dispatch(changeArticle());
+// console.log(store2.getState());
+// store.dispatch(changeArticle());
+// console.log(store.getState());
+// console.warn(store);
+
 
 // const store2 = createStore(
 //   reducer2,

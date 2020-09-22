@@ -1,17 +1,40 @@
 .NewsBlock {
+  margin: 18px;
   display: flex;
+  align-items: stretch;
   .News {
+    margin: 0;
+    padding: 0;
+    width: 189px;
+    display: flex;
     list-style: none;
     text-align: center;
-    .li {
-      width: 189px;
-      height: 48px;
+    position: relative;
+    flex-direction: column;
+    li {
+      flex: 1;
+      display: flex;
+      font-size: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+    li:before {
+      top: 0;
+      left: 0;
+      content: '';
+      width: 10px;
+      height: 100%;
+      position: absolute;
+      background-color: #eee;
+      
     }
   }
   .article {
-    width: 550px;
-    height: 300px;
-    margin-top: 20px;
+    flex: 1;
+    // width: 550px;
+    // height: 300px;
+    // margin-top: 20px;
     background-color: #eee;
+    border: none;
   }
 }

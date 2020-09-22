@@ -44,7 +44,7 @@ export class RealTimeBlock extends Component {
 }
 
 const mapState2props = (state) => {
-  return state;
+  return state.fourList;
 };
 
 const mapDispatch2props = (dispatch) => {

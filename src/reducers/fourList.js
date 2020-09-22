@@ -2,9 +2,7 @@ import {
   CHANGE_DEPARTMENT,
   } from 'actions';
 
-import initialData from './initialData';
-
-const initial = initialData;
+import { fourList as initData } from './initialData';
 
 function plusNumberAndIndex(state) {
   const { list } = state;
@@ -15,7 +13,7 @@ function plusNumberAndIndex(state) {
   }
 }
 
-export default function list( state = initial, action) {
+export default function fourList( state = initData, action) {
   switch(action.type) {
     case CHANGE_DEPARTMENT:
       return {
