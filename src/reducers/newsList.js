@@ -5,8 +5,10 @@ import { newsList as initData } from './initialData';
 export default function newsList(state = initData, action) {
   switch(action.type) {
     case CHANGE_ARTICLE:
-      console.warn('aaa');
-      return state;
+      return {
+        ...state,
+        select: action.choice,
+      }
     default:
       return state;
   };

@@ -4,19 +4,23 @@ import Article from './components/ArticleBlock';
 import { changeArticle } from "actions";
 import "./style.scss";
 
+
 export class NewsBlock extends Component {
+  handleChangeSelect = (choice) => {
+    this.props.change(choice)
+  }
   
   render() {
     const textList = this.props.category[this.props.select];
     return (
       <div className="NewsBlock">
         <ul className="News">
-          <li>首頁公告</li>
-          <li>新聞發怖</li>
-          <li>門診公告</li>
-          <li>鄉親肯定</li>
-          <li>員工服務</li>
-          <li>防疫物資</li>
+          <li onClick={this.handleChangeSelect.bind(this, 'home')}>首頁公告</li>
+          <li onClick={this.handleChangeSelect.bind(this, 'news')}>新聞發怖</li>
+          <li onClick={this.handleChangeSelect.bind(this, 'opd')}>門診公告</li>
+          <li onClick={this.handleChangeSelect.bind(this, 'folks')}>鄉親肯定</li>
+          <li onClick={this.handleChangeSelect.bind(this, 'employee')}>員工服務</li>
+          <li onClick={this.handleChangeSelect.bind(this, 'supplies')}>防疫物資</li>
         </ul>
         <div className='article'>
           <Article textList={textList} /> 
@@ -32,7 +36,7 @@ const mapState2Props = (state) => {
 
 const mapDispatch2Props = (dispatch) => {
   return {
-    change: () =>dispatch(changeArticle()),
+    change: (choice) => dispatch(changeArticle(choice)),
   };
 };
 
