@@ -14,7 +14,7 @@ export class NewsBlock extends Component {
     const textList = this.props.category[this.props.select];
     return (
       <div className="NewsBlock">
-        <ul className="News">
+        <ul className={`News ${this.props.select}`}>
           <li onClick={this.handleChangeSelect.bind(this, 'home')}>首頁公告</li>
           <li onClick={this.handleChangeSelect.bind(this, 'news')}>新聞發怖</li>
           <li onClick={this.handleChangeSelect.bind(this, 'opd')}>門診公告</li>
