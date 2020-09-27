@@ -1,6 +1,7 @@
-.carousel {
+.box {
   width: 100%;
   height: 100%;
+  display: flex;
   overflow: hidden;
   position: relative;
   .img {
@@ -12,8 +13,22 @@
       left: 100%;
     }
   }
+  .ballBox {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    .ball {
+      margin: 5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background-color: #ccc;
+    }
+  } 
 }
-
 @keyframes hide {
   from { left: 0; }
   to { left: -100%}

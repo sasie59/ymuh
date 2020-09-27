@@ -26,9 +26,20 @@ componentDidMount() {
   render() {
     const { imgList, isMoving } = this.state;
     return (
-      <div className='carousel'>
+      <div className='box'>
+      <div className='imgBox'>
         <div className={`img ${isMoving ? 'hide' : '' }`}>{imgList[0]}</div>
         <div className={`img ${isMoving ? 'show' : '' }`}>{imgList[1]}</div>
+      </div>
+      <div className='ballBox'>
+        <div className='ball' />
+        <div className='ball' />
+        <div className='ball' />
+        <div className='ball' />
+        <div className='ball' />
+        <div className='ball' />
+        <div className='ball' />
+      </div>
       </div>
     )
   }

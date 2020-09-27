@@ -7,7 +7,9 @@
   .container {
     display: flex;
     img {
+      margin-right: 10px;
       width: 100px;
+      opacity: 0.5;
     }
     .infoBar {
       display: flex;
