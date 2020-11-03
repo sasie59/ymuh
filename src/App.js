@@ -18,6 +18,15 @@ const store = createStore(
   reducers,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
+for(let i = 1; i <= 100; i++ ) {
+  if(i % 15 === 0) {
+    console.warn( 'fizzbuzz');
+  } else if(i % 3 === 0) {
+    console.warn('fizz');
+  } else if(i % 5 === 0) {
+    console.warn('buzz');
+  }
+}
 
 // const store2 = createStore(
 //   reducer2,
