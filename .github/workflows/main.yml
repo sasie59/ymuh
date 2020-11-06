@@ -3,7 +3,7 @@
 name: 建置、測試、部署
 on:
   push:
-    branches: [ master ]
+    branches: [ dev ]
 
 jobs:
   build-test-deploy: # 任務名
