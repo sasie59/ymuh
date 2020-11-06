@@ -35,17 +35,17 @@ jobs:
     # - name: Run the tests and generate coverage report
     #   run: npm test -- --coverage
 
-    - name: Build
-      run: npm run build
+    # - name: Build
+    #   run: npm run build
 
-    - name: Print a greeting
-      env:
-        MY_VAR: Hi there! My name is
-        FIRST_NAME: Mona
-        MIDDLE_NAME: The
-        LAST_NAME: Octocat
-      run: |
-        echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
+    # - name: Print a greeting
+    #   env:
+    #     MY_VAR: Hi there! My name is
+    #     FIRST_NAME: Mona
+    #     MIDDLE_NAME: The
+    #     LAST_NAME: Octocat
+    #   run: |
+    #     echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
       
     - name: Deploy
       env:
