@@ -11,8 +11,8 @@ import News from "./components/NewsBlock";
 import Footer from "./components/FooterBlock";
 
 import reducers from "./reducers";
-import reducer2 from "./reducers/newsList";
-import { changeArticle } from "./actions";
+// import reducer2 from "./reducers/newsList";
+// import { changeArticle } from "./actions";
 
 const store = createStore(
   reducers,

@@ -19,7 +19,7 @@ export default class InfoBlock extends Component {
         </ul>
         <div className="gap" />
         <div className="bus">
-          <a href="">蘭陽院區發車</a>
+          <span>蘭陽院區發車</span>
           <span
             className='driveTime'
             style={{
@@ -27,7 +27,7 @@ export default class InfoBlock extends Component {
             }}>
             {xinmin}
           </span><br/>
-          <a href="">新民院區發車</a>
+          <span>新民院區發車</span>
           <span
             className='driveTime'
             style={{
